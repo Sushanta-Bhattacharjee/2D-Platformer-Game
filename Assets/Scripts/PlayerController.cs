@@ -8,10 +8,14 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D boxCol;
     public Vector2 boxColInitSize;
     public Vector2 boxColInitOffset;
+    public float speed;
+    public float jump;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         Debug.Log("Player controller awake");
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // private void OnCollisionEnter2D(Collision2D collision)
@@ -30,24 +34,32 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Running
-        float speed = Input.GetAxisRaw("Horizontal");
-        Animator.SetFloat("Speed", Mathf.Abs(speed));
+        float horizontal = Input.GetAxisRaw("Horizontal");//run&movement animation
+        float vertical = Input.GetAxisRaw("Jump");//jump animation
+        float VerticalInput = Input.GetAxisRaw("Vertical");//crouch animation
+
+        MoveCharacter(horizontal , vertical);
+        PlayMovementAnimation(horizontal , vertical);
+        PlayCrouchAnimation(VerticalInput);
+    }
+
+    private void PlayMovementAnimation(float horizontal , float vertical)
+    {
+        //Running        
+        Animator.SetFloat("Speed", Mathf.Abs(horizontal));
         //Flipping the player
         Vector3 scale = transform.localScale;
-        if(speed < 0)
+        if(horizontal < 0)
         {
             scale.x = -1f * Mathf.Abs( scale.x );
         }
-        else if(speed > 0)
+        else if(horizontal > 0)
         {
             scale.x = Mathf.Abs(scale.x);
         }
         transform.localScale = scale;
 
         //Crouching
-        float VerticalInput = Input.GetAxis("Vertical");
-        PlayCrouchAnimation(VerticalInput);
         if(Input.GetKey(KeyCode.LeftControl))
         {
             Crouch(true);
@@ -56,9 +68,20 @@ public class PlayerController : MonoBehaviour
         {
             Crouch(false);
         }
+
+        MoveCharacter(horizontal,vertical);
+
+        //Jump
+        if(vertical>0)
+        {
+            Animator.SetBool("Jump", true);
+        }
+        else{
+            Animator.SetBool("Jump", false);
+        }
     }
 
-        public void Crouch(bool crouch)
+    private void Crouch(bool crouch)
     {
          if(crouch == true)
         {
@@ -80,11 +103,25 @@ public class PlayerController : MonoBehaviour
         Animator.SetBool("Crouch", crouch);
     }
 
-    public void PlayCrouchAnimation(float vertical)
+    private void PlayCrouchAnimation(float vertical)
     {
         if(vertical > 0)
         {
             Animator.SetTrigger("Crouch");
+        }
+    }
+
+    private void MoveCharacter(float horizontal , float vertical)
+    {
+        //moving character horizontally
+        Vector3 position = transform.position;
+        position.x += horizontal * speed * Time.deltaTime;
+        transform.position = position;
+
+        //moving character vertically
+        if(vertical>0)
+        {
+            rb.AddForce(new Vector2(0f, jump), ForceMode2D.Force);
         }
     }
 
