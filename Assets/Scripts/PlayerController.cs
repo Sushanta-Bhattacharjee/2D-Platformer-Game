@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jump;
     private Rigidbody2D rb;
+    private bool isJumping;
 
     private void Awake()
     {
@@ -119,9 +120,18 @@ public class PlayerController : MonoBehaviour
         transform.position = position;
 
         //moving character vertically
-        if(vertical>0)
+        if(vertical>0 && !isJumping)
         {
             rb.AddForce(new Vector2(0f, jump), ForceMode2D.Force);
+            isJumping = true;
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D jumping)
+    {
+        if(jumping.gameObject.CompareTag("Ground"))
+        {
+            isJumping = false;
         }
     }
 
