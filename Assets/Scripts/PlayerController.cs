@@ -122,6 +122,7 @@ public class PlayerController : MonoBehaviour
         //moving character vertically
         if(vertical>0 && !isJumping)
         {
+            Animator.SetTrigger( "Jump" );
             rb.AddForce(new Vector2(0f, jump), ForceMode2D.Force);
             isJumping = true;
         }
