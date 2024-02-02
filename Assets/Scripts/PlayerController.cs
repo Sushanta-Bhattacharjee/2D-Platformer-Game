@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
         transform.position = position;
 
         //moving character vertically
-        if(vertical>0 && !isJumping)
+        if(Input.GetButtonDown("Jump") && !isJumping)
         {
             Animator.SetTrigger( "Jump" );
             rb.AddForce(new Vector2(0f, jump), ForceMode2D.Force);
