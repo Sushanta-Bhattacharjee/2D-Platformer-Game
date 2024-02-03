@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public ScoreController ScoreCtrl;
     public Animator Animator;
     public BoxCollider2D boxCol;
     public Vector2 boxColInitSize;
@@ -12,6 +13,12 @@ public class PlayerController : MonoBehaviour
     public float jump;
     private Rigidbody2D rb;
     private bool isJumping;
+
+    public void PickUpKey()
+    {
+        Debug.Log(" Player picked up the key.");
+        ScoreCtrl.IncreaseScore(1);
+    }
 
     private void Awake()
     {
