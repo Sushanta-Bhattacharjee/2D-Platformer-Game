@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,7 +15,20 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isJumping;
 
-    public void PickUpKey()
+    public void KillPlayer()
+    {
+        Debug.Log("Player killed by enemy");
+        //Play the death animation
+        //Reset the entire level
+        ReloadLevel();
+    }
+
+    private void ReloadLevel()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void PickUpKey()//Interaction with collectible
     {
         Debug.Log(" Player picked up the key.");
         ScoreCtrl.IncreaseScore(1);
