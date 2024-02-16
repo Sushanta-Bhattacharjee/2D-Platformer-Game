@@ -150,190 +150,400 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EllenHealth_Empty
+      name: EllenHealth_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 88
+        y: 612
+        width: 82
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: 71610889812ee3940bc26cbf512d2a82
+      internalID: 1895153262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Gaining00
+      name: EllenHealth_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 294
+        y: 576
+        width: 181
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: 0087395e3d965ca4bac9187c636d6b94
+      internalID: 419561434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Gaining01
+      name: EllenHealth_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 590
+        y: 631
+        width: 109
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300004
+      spriteID: be904fb91ca5973438a76e3589c149ed
+      internalID: -1128129207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Gaining02
+      name: EllenHealth_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 108
+        y: 337
+        width: 40
+        height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300006
+      spriteID: a24089cb27da97647b4806a04d58561a
+      internalID: 236107567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Gaining03
+      name: EllenHealth_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 346
+        y: 367
+        width: 80
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23305410000000000800000000000000
-      internalID: 21300008
+      spriteID: 914268e8ddd1dde41a464ad04b766925
+      internalID: 640632561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Full
+      name: EllenHealth_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 616
+        y: 362
+        width: 54
+        height: 41
+      alignment: 9
+      pivot: {x: 17.194477, y: 4.5041165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
+      spriteID: d1bf6372ccaf959478e229a376189c0a
+      internalID: -1654249895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Losing00
+      name: EllenHealth_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 123
+        y: 212
+        width: 30
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300012
+      spriteID: a1d630fe5aba3494984cf361e8415ef7
+      internalID: -38089196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Losing01
+      name: EllenHealth_7
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 305
+        y: 17
+        width: 154
+        height: 221
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300014
+      spriteID: 73c8ee0762c034e40b0c06bfca719d61
+      internalID: 1765044041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EllenHealth_Losing02
+      name: EllenHealth_8
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
+        x: 637
+        y: 221
+        width: 11
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300016
+      spriteID: 385ae4f8729214042aedb809e0721643
+      internalID: -2139051724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_9
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 209
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd4ce0822d394940a00663f5e61b63c
+      internalID: 1339064159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 203
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b8a2fd44c3f314ea78279509708333
+      internalID: 1452672619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_11
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 207
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3a3c96711aedc4bb904f5b8cefd891
+      internalID: -348504673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 41
+        width: 214
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e283fb7f4c5d414088c1a9c56fb658b
+      internalID: 616681580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_13
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 94
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe67008506e8ef45bed988e42268e95
+      internalID: 864651327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_14
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 100
+        width: 49
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2273506173c6147a2d4981f5c561ed
+      internalID: 1218633537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_15
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 94
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76d47dc9d4156a4ca9b70b9371d46e5
+      internalID: 231742740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_16
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 63
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1d098a52c6ab14e972920c26312a7d
+      internalID: 2015092937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_17
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 17
+        width: 6
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e95b7b59e40f7145a0f1ff8d23d7b0c
+      internalID: 567741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EllenHealth_18
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 17
+        width: 10
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e73ff4a15469b40aa15806d17b838c
+      internalID: -178118814
       vertices: []
       indices: 
       edges: []
@@ -341,7 +551,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d05fd7f96d89ce24a936ed886726b06c
     internalID: 0
     vertices: []
     indices: 
@@ -349,15 +559,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      EllenHealth_Empty: 21300000
-      EllenHealth_Full: 21300010
-      EllenHealth_Gaining00: 21300002
-      EllenHealth_Gaining01: 21300004
-      EllenHealth_Gaining02: 21300006
-      EllenHealth_Gaining03: 21300008
-      EllenHealth_Losing00: 21300012
-      EllenHealth_Losing01: 21300014
-      EllenHealth_Losing02: 21300016
+      EllenHealth_0: 1895153262
+      EllenHealth_1: 419561434
+      EllenHealth_10: 1452672619
+      EllenHealth_11: -348504673
+      EllenHealth_12: 616681580
+      EllenHealth_13: 864651327
+      EllenHealth_14: 1218633537
+      EllenHealth_15: 231742740
+      EllenHealth_16: 2015092937
+      EllenHealth_17: 567741
+      EllenHealth_18: -178118814
+      EllenHealth_2: -1128129207
+      EllenHealth_3: 236107567
+      EllenHealth_4: 640632561
+      EllenHealth_5: -1654249895
+      EllenHealth_6: -38089196
+      EllenHealth_7: 1765044041
+      EllenHealth_8: -2139051724
+      EllenHealth_9: 1339064159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

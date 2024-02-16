@@ -10,5 +10,25 @@ public class PlayerCollision : MonoBehaviour
         {
             Debug.Log("Game Over");
         }
+        if(collision.transform.tag == "Enemy")
+        {
+            HealthManager.health--;
+            if(HealthManager.health<=0)
+            {
+                //load game over scene
+            }
+            else{
+                StartCoroutine(GetHurt());
+            }
+        }
+    }
+
+    IEnumerator GetHurt()
+    {
+        Physics2D.IgnoreLayerCollision(6,7);
+        GetComponent<Animator>().SetLayerWeight(1,1);
+        yield return new WaitForSeconds(3);
+        GetComponent<Animator>().SetLayerWeight(1,0);
+        Physics2D.IgnoreLayerCollision(6,7,false);
     }
 }

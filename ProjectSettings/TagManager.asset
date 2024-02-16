@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - DeathPlatform
+  - Enemy
   layers:
   - Default
   - TransparentFX
