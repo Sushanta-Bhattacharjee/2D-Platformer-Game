@@ -1988,6 +1988,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2224649810665862587, guid: cf2da43ce2239b344b1f6f1bc4b944a3,
         type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2224649810665862587, guid: cf2da43ce2239b344b1f6f1bc4b944a3,
+        type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
