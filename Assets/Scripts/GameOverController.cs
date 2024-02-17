@@ -7,9 +7,11 @@ using UnityEngine.SceneManagement;
 public class GameOverController : MonoBehaviour
 {
     public Button buttonRestart;
+    public Button buttonQuit;
     private void Awake()
     {
         buttonRestart.onClick.AddListener(ReloadLevel);
+        // buttonQuit.onClick.AddListener(PlayGame);
     }
 
     public void PlayerDied()
@@ -21,4 +23,9 @@ public class GameOverController : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    // private void PlayGame()
+    // {
+    //     SceneManager.LoadScene(0);
+    // }
 }
