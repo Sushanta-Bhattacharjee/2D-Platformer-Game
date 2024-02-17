@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Player killed by enemy");
         //Play the death animation
+        Animator.SetTrigger( "DeathTrigger" );
         //Reset the entire level
         gameOverController.PlayerDied();
         this.enabled = false;
