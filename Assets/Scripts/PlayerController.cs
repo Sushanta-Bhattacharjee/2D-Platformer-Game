@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public ScoreController ScoreCtrl;
+    public GameOverController gameOverController;
     public Animator Animator;
     public BoxCollider2D boxCol;
     public Vector2 boxColInitSize;
@@ -20,13 +21,11 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player killed by enemy");
         //Play the death animation
         //Reset the entire level
-        ReloadLevel();
+        gameOverController.PlayerDied();
+        this.enabled = false;
     }
 
-    private void ReloadLevel()
-    {
-        SceneManager.LoadScene(0);
-    }
+    
 
     public void PickUpKey()//Interaction with collectible
     {
