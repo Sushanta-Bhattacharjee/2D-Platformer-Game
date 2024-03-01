@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class LobbyController : MonoBehaviour
 {
     public Button buttonPlay;
+    public Button buttonQuit;
     public GameObject LevelSelection;
     private void Awake()
     {
         buttonPlay.onClick.AddListener(PlayGame);
+        //buttonQuit.onClick.AddListener( QuitGame );
     }
     
     private void PlayGame()
@@ -19,7 +21,7 @@ public class LobbyController : MonoBehaviour
         LevelSelection.SetActive(true);
     }
 
-    public void Quit( )
+    public void QuitGame( )
     {
         Application.Quit( );
     }
